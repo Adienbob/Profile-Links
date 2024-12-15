@@ -1,0 +1,143 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+    --Font-size: (paragraph): 14px;
+    --Family: "Inter", serif;
+}
+
+* {
+    font-family: var(--Family);
+}
+
+body {
+    background-color: var(--Grey-900);
+}
+
+main {
+    height: 100vh;
+    color: var(--White);
+    display: flex;
+    align-content: center;
+    justify-items: center;
+}
+
+section {
+    background-color: var(--Grey-800);
+    width: fit-content;
+    padding: 30px;
+    display: grid;
+    justify-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+h1 {
+    font-size: 16px !important;
+    font-weight: 700;
+}
+
+.adress {
+    color: var(--Green);
+    margin: 0px;
+    font-size: var(--Font-size);
+}
+
+.description {
+    color: hsl(0, 0%, 70%);
+    font-weight: 400;
+}
+
+.links {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.links div {
+    display: grid;
+    text-align: center;
+    background-color: var(--Grey-700);
+    margin: 8px 8px;
+    border-radius: 5px;
+}
+
+a {
+    display: grid;
+    color: white;
+    text-decoration: none;
+    padding: 10px 100px;
+    font-weight: 700;
+}
+
+div div:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+
+
+
+@media (min-width: 375px) and (max-width: 550px) {
+    main {
+        height: 140vh;
+    }
+    
+    section {
+        padding: 15px;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+
+
+
+    a {
+        padding: 10px 80px;
+    }
+    
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+    section {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1020px) {
+    section {
+        height: 70vh;
+    }
+
+    .links div {
+        margin: 10px;
+    }
+
+    a {
+        padding: 10px 140px;
+    }
+}
+
+
